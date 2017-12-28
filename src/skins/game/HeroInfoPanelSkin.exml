@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="400" height="640" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:SkinnableComponent id="heroInfo" skinName="skins.game.hero.HeroListInfoSkin" />
+	<e:SkinnableComponent id="resBar" skinName="skins.game.ResBarSkin"/>
+</e:Skin>

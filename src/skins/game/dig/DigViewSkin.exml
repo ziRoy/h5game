@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="400" height="640" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing" xmlns:ns1="*">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:UIAsset source="bg" width="100%" height="100%" />
+	<e:Group width="100%" top="50" bottom="60">
+		<e:layout>
+			<e:VerticalLayout horizontalAlign="center" />
+		</e:layout>
+		<e:Group width="100%">
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle"/>
+			</e:layout>
+			<e:UIAsset id="picLeftIcon" source="gonglue_jiantou" /> <!-- 此处应该设置 scaleX="-1" 来翻转，但是编辑器现在有显示BUG，只能在代码中设置 -->
+			<e:Scroller horizontalScrollPolicy="auto" width="80%">
+				<e:viewport>
+					<e:Group>
+						<e:layout>
+							<e:HorizontalLayout/>
+						</e:layout>
+						<e:Button skinName="skins.dw.IconLabelSkin" icon="zhucheng_renwu"/>
+						<e:Button skinName="skins.dw.IconLabelSkin" icon="zhucheng_renwu"/>
+						<e:Button skinName="skins.dw.IconLabelSkin" icon="zhucheng_renwu"/>
+						<e:Button skinName="skins.dw.IconLabelSkin" icon="zhucheng_renwu"/>
+					</e:Group> 
+				</e:viewport>
+			</e:Scroller>
+			<e:UIAsset source="gonglue_jiantou" />
+		</e:Group>
+		
+		<e:Rect width="95%" height="130" strokeColor="0x0" strokeWeight="3" strokeAlpha="1" />
+		
+		<e:Group width="100%">
+			<e:layout>
+				<e:HorizontalLayout gap="20" verticalAlign="center" />
+			</e:layout>
+			<e:Spacer width="40" />
+			<ns1:ProgressBar id="pbProgress" width="50%" height="30" skinName="skins.dw.ProgressBarSkin" value="30" />
+			<e:Button label="+" height="30" width="30" />
+		</e:Group>
+		
+		<e:DataGroup id="dgDigItem" width="100%" >
+			<e:layout >
+				<e:TileLayout orientation="rows" requestedColumnCount="2" />
+			</e:layout>
+		</e:DataGroup>
+		
+		<e:Group width="100%">
+			<e:layout>
+				<e:HorizontalLayout />
+			</e:layout>
+			<e:Label width="80%" text="123456789012345678901234567890" size="18" />
+			<e:Button label="使用" width="80" height="50"/>
+		</e:Group>
+		
+	</e:Group>
+</e:Skin>

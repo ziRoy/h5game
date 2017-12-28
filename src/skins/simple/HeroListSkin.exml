@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="400" height="640" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:Group width="100%" height="100%" x="0" y="0">
+		<e:Group width="100%" height="100" x="267" y="25">
+			<e:Button id="backBtn" label="返回" skinName="skins.simple.DWBtnSkin" right="0" top="0"/>
+		</e:Group>
+		<e:Group width="100%" height="200" horizontalCenter="0" verticalCenter="-150">
+			<e:Label text="英雄描述" textColor="0xF5090D" verticalCenter="-50" horizontalCenter="0"/>
+			<e:Group width="400" height="200" bottom="0" right="0">
+				<e:Button id="levelUpBtn" label="升级" x="57" y="166" skinName="skins.simple.DWBtnSkin"/>
+				<e:Button id="lineUpBtn" label="上阵" x="137" y="111" skinName="skins.simple.DWBtnSkin"/>
+				<e:layout>
+					<e:HorizontalLayout horizontalAlign="right" verticalAlign="bottom"/>
+				</e:layout>
+			</e:Group>
+			<e:layout>
+				<e:BasicLayout/>
+			</e:layout>
+		</e:Group>
+		<e:Group width="100%" height="250" left="0" bottom="0">
+			<e:List id="heroList" itemRenderer="HeroListItemRenderer" x="190" y="41" width="100%" height="150" skinName="skins.simple.HListSkin"/>
+			<e:TabBar id="heroTypeTab" x="0" horizontalCenter="0" itemRendererSkinName="skins.simple.HeroListTabBarButtonSkin" verticalCenter="-50" skinName="skins.simple.TabBarSkin">
+				<e:layout>
+					<e:HorizontalLayout/>
+				</e:layout>
+			</e:TabBar>
+			<e:layout>
+				<e:VerticalLayout horizontalAlign="center"/>
+			</e:layout>
+		</e:Group>
+		<e:layout>
+			<e:VerticalLayout/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

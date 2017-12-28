@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="400" height="640" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<!-- 应该要横向锁定 -->
+	<e:Group id="content" top="0" bottom="0" horizontalCenter="0" width="100%">
+			
+	</e:Group>
+	<e:SkinnableComponent id="resBar" skinName="skins.game.ResBarSkin"/>
+	<e:SkinnableComponent id="navigatorBar" skinName="skins.game.NavigatorBarSkin" />
+</e:Skin>

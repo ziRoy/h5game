@@ -1,0 +1,12 @@
+message CS_Foo_echo
+{
+    option code = 10001;
+    required string content = 1;
+    repeated int32 param = 2;
+}
+
+message SC_Foo_echo
+{
+    option code = 20001;
+    required string content = 1;
+}

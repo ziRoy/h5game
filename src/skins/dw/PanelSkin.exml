@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="400" height="300" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.Panel"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	
+	<e:UIAsset   source="zhuangbei_6" scale9Grid="40,26,401,394" top="0" bottom="0" right="0" left="0"/>
+	<e:Group left="0" right="0" height="60"  id="moveArea" >
+		<e:UIAsset left="-2" right="-2" bottom="-4"  top="-2" source="zhuangbei_biaotilan" scale9Grid="43,10,869,46"/>
+		<e:Label id="titleDisplay"
+		         maxDisplayedLines="1" left="5" right="5"
+		         minHeight="28" verticalAlign="middle" textAlign="center"  textColor="0xFFFFFF" fontFamily="黑体-简 中等" size="28" verticalCenter="-10"/>
+	</e:Group>
+	<e:Group width="100%" bottom="0"  top="50" id="contentGroup" clipAndEnableScrolling="true">
+	</e:Group>
+</e:Skin>

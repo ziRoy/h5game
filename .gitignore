@@ -1,0 +1,3 @@
+.idea
+bin-debug/**/*.js.map
+**/.DS_Store

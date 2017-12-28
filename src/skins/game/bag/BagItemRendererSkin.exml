@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="385" height="106" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset source="bg_2" width="100%" height="100%" />
+	<e:Group>
+		<e:layout>
+			<e:HorizontalLayout verticalAlign="middle" gap="15" padding="13"/>
+		</e:layout>
+		<e:Group>
+			<e:UIAsset source="bg_4" />
+			<e:Group>
+				<e:layout>
+					<e:HorizontalLayout verticalAlign="middle" gap="15" /> 	
+				</e:layout>
+				<e:UIAsset id="picItemIcon" source="lv_bg_2" />
+				<e:Group >
+					<e:layout >
+						<e:VerticalLayout horizontalAlign="center" gap="5" />
+					</e:layout>
+					<e:Label id="lblItemName" width="140" height="20" text="物品名称" size="18" textColor="0xff0000" >
+					</e:Label>
+					<e:Label id="lblItemDesc" width="140" height="60" text="物品名称物品描述描述描述描述描述" size="18">
+					</e:Label>
+				</e:Group>
+			</e:Group>
+		</e:Group>
+		<e:Group>
+			<e:layout>
+				<e:VerticalLayout horizontalAlign="center" gap="5"/>	
+			</e:layout>
+			<e:Group>
+				<e:layout>
+					<e:HorizontalLayout />
+				</e:layout>
+				<e:Label text="拥有:" size="18" textColor="0x224433" bold="true" />
+				<e:Label id="lblItemNum" text="9999" size="18" textColor="0x224433" bold="true" />
+			</e:Group>
+			<e:Button id="btnUseItem" label="使用" width="120" height="40" />
+		</e:Group>
+	</e:Group>
+</e:Skin>

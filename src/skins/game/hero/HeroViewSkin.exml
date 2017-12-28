@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="400" height="640" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:UIAsset source="bg" scale9Grid="50,75,300,450" width="100%" height="100%"/> 
+	<e:Group width="100%" top="50" bottom="60">
+			<e:layout>
+				<e:VerticalLayout horizontalAlign="center" verticalAlign="middle"/>
+			</e:layout>
+			<e:Group width="100%" horizontalCenter="0" verticalCenter="0">
+				<e:UIAsset source="yingxiong_bg_1" left="20" scale9Grid="49,13,274,17"/>
+				<!-- <e:Group width="100%"> -->
+				<!-- <e:Rect width="85%" height="40" horizontalCenter="0"/> -->
+				<e:Group top="5" left="30">
+					<e:layout>
+						<e:VerticalLayout gap="10" />
+					</e:layout>
+					<e:Group width="100%" >
+						<e:UIAsset source="bg_3" width="325" height="30" left="25" scale9Grid="13,13,84,5"/>
+						<e:Group horizontalCenter="0" verticalCenter="0" top="0">
+							<e:layout>
+								<e:TileLayout horizontalGap="20" requestedRowCount="1" requestedColumnCount="3" />
+							</e:layout>
+							<e:Group>
+								<e:layout>
+									<e:HorizontalLayout verticalAlign="middle" gap="5"/>	
+								</e:layout>
+								<e:UIAsset source="icon_hp" />
+								<e:Label id="lblTeamHp" text="99999" size="18" textColor="0x000000"/>
+							</e:Group>
+							<e:Group>
+								<e:layout>
+									<e:HorizontalLayout verticalAlign="middle" gap="5"/>	
+								</e:layout>
+								<e:UIAsset source="icon_defend" />
+								<e:Label id="lblTeamDp" text="99999" size="18" textColor="0x000000"/>
+							</e:Group>
+							<e:Group>
+								<e:layout>
+									<e:HorizontalLayout verticalAlign="middle" gap="5"/>	
+								</e:layout>
+								<e:UIAsset source="icon_attack" />
+								<e:Label id="lblTeamAtk" text="99999" size="18" textColor="0x000000"/>
+							</e:Group>
+						</e:Group>
+					</e:Group>
+					<!-- </e:Group> -->
+					<!-- 职业选择 -->
+					<e:Group horizontalCenter="0" verticalCenter="0" left="20">
+						<e:layout>
+							<e:TileLayout requestedRowCount="1" requestedColumnCount="4" columnWidth="88" rowHeight="88"/>
+						</e:layout>
+						<e:ToggleButton id="togDefender" 	icon="zhucheng_gonghui" skinName="skins.dw.ButtonSkin"/>
+						<e:ToggleButton id="togWarrior" 	icon="zhucheng_gonghui" skinName="skins.dw.ButtonSkin"/>
+						<e:ToggleButton id="togMage"		icon="zhucheng_gonghui" skinName="skins.dw.ButtonSkin"/>
+						<e:ToggleButton id="togPriest"	icon="zhucheng_gonghui" skinName="skins.dw.ButtonSkin"/>
+					</e:Group>
+				</e:Group>
+			</e:Group>
+			<!-- 英雄属性、技能说明 -->
+			<e:Group horizontalCenter="0" verticalCenter="0" >
+				<e:UIAsset source="bg_2" scale9Grid="35,18,211,113" width="390" height="250" />
+				<e:Group>
+					<e:layout>
+						<e:VerticalLayout gap="5" horizontalAlign="left" verticalAlign="middle" />
+					</e:layout>
+
+					<e:Group>
+						<e:UIAsset source="yingxiong_title" />
+						<e:Label id="lblLv" text="Lv.2" size="19" left="15" top="5" >
+						</e:Label>
+						<e:Label id="lblHeroName" text="hero.name" size="22" left="80" textColor="0xFF0000" top="5">
+						</e:Label>
+					</e:Group>
+					<e:Group >
+						<e:layout>
+							<e:HorizontalLayout verticalAlign="middle" />	
+						</e:layout>
+						<e:Group >
+							<e:layout>
+								<e:VerticalLayout horizontalAlign="center" />
+							</e:layout>	
+							<e:UIAsset id="picHeroIcon" source="zhucheng_gonghui" width="140" height="80"/>
+							<e:Button id="btnChangeHero" label="更换角色" size="22" width="140" height="50"/>
+						</e:Group>
+						<e:Group >
+							<e:UIAsset source="bg_4" width="230" height="160" scale9Grid="29,19,179,62" />
+							<e:Group top="20" left="15">
+								<e:layout>
+									<e:VerticalLayout horizontalAlign="left" gap="15" />
+								</e:layout>
+								<e:Group>
+									<e:layout>
+										<e:HorizontalLayout verticalAlign="middle" horizontalAlign="left" />
+									</e:layout>
+									<e:UIAsset id="normalskill" source="anniu_6" width="45" height="45" left="15" scale9Grid="13,10,84,10" />
+									<e:Label id="lblNormalAttk" text="普通攻击     1212 11" width="135" height="60" textColor="0xFF0000" size="22">
+									</e:Label>
+								</e:Group>
+								<e:Group>
+									<e:layout>
+										<e:HorizontalLayout verticalAlign="middle" horizontalAlign="left"/>
+									</e:layout>
+									<e:UIAsset id="specialskill" source="anniu_6" width="45" height="45" scale9Grid="13,10,84,10"/>
+									<e:Label id="lblBiSha" text="必杀  222222 " width="135" height="60" textColor="0xFF0000" size="22">
+									</e:Label>	
+								</e:Group>
+							</e:Group>
+						</e:Group>
+					</e:Group>
+					
+					<!-- 英雄血量 攻击 防御等信息 -->
+					<e:Group width="100%">
+						<e:layout>
+							<e:HorizontalLayout gap="15" horizontalAlign="center" verticalAlign="middle"/>
+						</e:layout>
+						<e:Group >
+							<e:UIAsset source="bg_4" width="110" height="30" />
+							<e:UIAsset source="icon_attack" left="10" top="5" />
+							<e:Label id="lblAttack" text="9999" textColor="0x552532" size="18" left="35" top="5"> 
+							</e:Label>
+						</e:Group>
+						<e:Group>
+							<e:UIAsset source="bg_4" width="110" height="30" />
+							<e:UIAsset source="icon_hp" left="10" top="5" />
+							<e:Label id="lblHp" text="9999" textColor="0x552532" size="18" left="35" top="5"> 
+							</e:Label>
+						</e:Group>>
+						<e:Group>
+							<e:UIAsset source="bg_4" width="110" height="30" />
+							<e:UIAsset source="icon_defend" left="10" top="5" />
+							<e:Label id="lblDefend" text="9999" textColor="0x552532" size="18" left="35" top="5"> 
+							</e:Label>
+						</e:Group>>
+					</e:Group>
+				
+				</e:Group>
+			</e:Group>
+		
+		<!-- 升级道具 -->
+		<e:Group horizontalCenter="0" verticalCenter="0" >
+			<e:UIAsset source="bg_2" scale9Grid="35,18,211,113" width="390" height="105"/>
+			<e:Group width="100%" top="5">
+				<e:layout>
+					<e:VerticalLayout horizontalAlign="center" verticalAlign="middle" gap="10" />
+				</e:layout>
+				<e:Group>
+					<e:layout>
+						<e:HorizontalLayout verticalAlign="middle" horizontalAlign="center"/>	
+					</e:layout>
+					<e:Group>
+						<e:Group>
+							<e:layout>
+								<e:HorizontalLayout verticalAlign="middle" gap="10"/>
+							</e:layout>
+							<e:UIAsset source="icon_attack" />
+							<e:Group>
+								<e:layout>
+									<e:VerticalLayout horizontalAlign="center" />	
+								</e:layout>
+								<e:Label id="daoju_name1" size="18" text="道具名称" textColor="0x112244">
+								</e:Label>
+								<e:Group>
+									<e:UIAsset source="bg_3" width="75" height="25" />
+									<e:Label id="daojuOne" size="18" text="10/100" >
+									</e:Label>
+								</e:Group>	
+							</e:Group>
+						</e:Group>
+					</e:Group>
+					<e:Group>
+						<e:Group>
+							<e:layout>
+								<e:HorizontalLayout verticalAlign="middle" gap="10"/>
+							</e:layout>
+							<e:UIAsset source="icon_defend" />
+							<e:Group>
+								<e:layout>
+									<e:VerticalLayout horizontalAlign="center" />	
+								</e:layout>
+								<e:Label id="daoju_name2" size="18" text="道具名称" textColor="0x112244">
+								</e:Label>
+								<e:Group>
+									<e:UIAsset source="bg_3" width="75" height="25" />
+									<e:Label id="daojuTwo" size="18" text="10/100" >
+									</e:Label>
+								</e:Group>	
+							</e:Group>
+						</e:Group>
+					</e:Group>
+					<e:Group>
+						<e:Group>
+							<e:layout>
+								<e:HorizontalLayout verticalAlign="middle" gap="10"/>
+							</e:layout>
+							<e:UIAsset source="icon_hp" />
+							<e:Group>
+								<e:layout>
+									<e:VerticalLayout horizontalAlign="center" />	
+								</e:layout>
+								<e:Label id="daoju_name3" size="18" text="道具名称" textColor="0x112244">
+								</e:Label>
+								<e:Group>
+									<e:UIAsset source="bg_3" width="75" height="25" />
+									<e:Label id="daojuThree" size="18" text="10/100" >
+									</e:Label>
+								</e:Group>	
+							</e:Group>
+						</e:Group>
+					</e:Group>
+				</e:Group>
+				<e:Button id="btnHeroUpgrade" label="升级" size="18" width="115" height="45"/>	
+			</e:Group>
+		</e:Group>
+		
+	</e:Group>
+</e:Skin>

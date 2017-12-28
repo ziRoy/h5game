@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="57" height="57" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.ToggleButt"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="up"/>
+		<e:State name="down"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:Group width="100%" height="100%" width.down="90%" height.down="90%" horizontalCenter="0" verticalCenter="0">
+		<e:UIAsset source.down="bg_4" source="bg_4" source.disabled="bg_4" scale9Grid="29,10,179,62" left="0" right="0" top="0" bottom="0"/>
+		<e:UIAsset id="picGou" source="gou" visible="false" top="30" left="30"/>
+		<e:UIAsset id="picLock" source="suo" visible="false" width="100%" height="100%"/>
+	</e:Group>
+</e:Skin>

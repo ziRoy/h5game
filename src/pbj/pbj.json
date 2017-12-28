@@ -1,0 +1,11 @@
+{
+  "name": "pbj",
+  "dependence": [],
+  "source":".",
+  "file_list": [
+    "ByteBufferAB.js",
+    "Long.js",
+    "ProtoBuf.js",
+    "protobufjs.d.ts"
+  ]
+}

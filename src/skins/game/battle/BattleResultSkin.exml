@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="360" height="300" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:Panel skinName="skins.dw.PanelSkin" height="100%" width="100%">
+		<e:layout>
+			<e:VerticalLayout horizontalAlign="center" verticalAlign="bottom" paddingBottom="20" gap="50"/>
+		</e:layout>
+		<e:Label id="lblStageName" text="lblStageName" stroke="2" strokeColor="0x0" />
+		
+		<e:Button id="btnOk" label="确定" />
+		
+	</e:Panel>
+</e:Skin>

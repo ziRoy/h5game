@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin height="104" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="ChapterItemRender"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:Group id="baseGroup" width="200" height="104" top="0" left="0" touchEnabled="true" touchChildren="false">
+		<e:UIAsset id="iconDisplay" width="98" height="104" x="76" y="133" source="zhucheng_icon_baoxiang_v" autoScale="false" fillMode="scale" touchEnabled="false"/>
+		<e:Label id="nameDisplay" x="12" y="11" text="关卡" textColor="0x09EC51" touchEnabled="false"/>
+		<e:layout>
+			<e:HorizontalLayout/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,9 @@
+{
+  "name": "papa",
+  "dependence": [],
+  "source":".",
+  "file_list": [
+    "papaparse.js",
+    "papa.d.ts"
+  ]
+}

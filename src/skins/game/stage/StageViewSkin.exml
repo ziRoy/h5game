@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="400" height="640" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:Scroller horizontalScrollPolicy="auto" width="100%">
+		<e:viewport>
+			<e:Group>
+				<e:UIAsset id="asBg" source="stage_bg_1" />
+				<e:Button id="btnStage1" name="1" skinName="skins.dw.IconLabelSkin" icon="guanka_biaoji_putong" label=""  x="103" y="329"/>
+				<e:Button id="btnStage2" name="2" skinName="skins.dw.IconLabelSkin" icon="guanka_biaoji_putong" label=""  y="239" x="299"/>
+				<e:Button id="btnStage3" name="3" skinName="skins.dw.IconLabelSkin" icon="guanka_biaoji_putong" label=""  x="387" y="379"/>
+			</e:Group>
+		</e:viewport>
+	</e:Scroller>
+</e:Skin>

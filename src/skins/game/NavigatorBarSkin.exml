@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="400" height="640" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:Group  left="5" bottom="0">
+		<e:layout>
+			<e:HorizontalLayout padding="10" horizontalAlign="left"/>
+		</e:layout>
+		
+		<e:Button id="btnStage" skinName="skins.dw.IconLabelSkin" label="冒险" icon="zhucheng_buzheng" />
+		<e:Button id="btnDig" skinName="skins.dw.IconLabelSkin" label="挂机" icon="zhucheng_gonghui"/>
+		<e:Button id="btnHero" skinName="skins.dw.IconLabelSkin" label="英雄" icon="zhucheng_haoyou"/>
+		<e:Button id="btnBag" skinName="skins.dw.IconLabelSkin" label="背包" icon="zhucheng_wupinbeibao"/>
+		<e:Button id="btnTech" skinName="skins.dw.IconLabelSkin" label="科技" icon="zhucheng_gonglue"/>
+	</e:Group>
+</e:Skin>

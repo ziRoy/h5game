@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="400" height="640" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset source="bg" scale9Grid="50,75,300,450" width="100%" height="100%"/> 
+	<e:Group >
+		<e:layout>
+			<e:VerticalLayout horizontalAlign="center" paddingTop="65"/>
+		</e:layout>
+		
+		<e:Group>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle" gap="10"/>
+			</e:layout>
+			<e:Group>
+				<e:layout>
+					<e:VerticalLayout horizontalAlign="center" gap="5" padding="5"/>	
+				</e:layout>	
+				<e:Label id="lblHeroType" text="坦克" textColor="0x001224" bold="true" size="18" >
+				</e:Label>
+				<!-- 左侧可滑动 选择栏 -->
+				<e:Group>
+					<e:UIAsset source="bg_2" width="95" height="450" autoScale="true" scale9Grid="35,18,211,113" />
+					<e:Scroller verticalScrollPolicy="auto" height="450" width="95" horizontalCenter="0" top="10" >
+						<e:viewport>
+							<e:DataGroup id="heroItem" >
+								<e:layout>
+									<e:VerticalLayout horizontalAlign="center" gap="15" />					
+								</e:layout>
+							</e:DataGroup>
+						</e:viewport>
+					</e:Scroller>
+				</e:Group>
+			</e:Group>	
+			<e:Group>
+				<e:layout>
+					<e:VerticalLayout horizontalAlign="center" />	
+				</e:layout>
+				<e:Group>
+					<e:layout>
+						<e:HorizontalLayout verticalAlign="middle" />
+					</e:layout>
+					<e:UIAsset id="picHeroIcon" source="anniu_6" width="161" height="192" />
+					<e:Group>
+						<e:layout>
+							<e:VerticalLayout horizontalAlign="center" paddingTop="15" gap="10"/>
+						</e:layout>
+						<e:Label id="lblHeroLv" text="Lv.2" textColor="0x124536" size="18" bold="true">
+						</e:Label>
+						<e:Label id="lblHeroName" text="英雄名字" textColor="0x124536" size="18" bold="true">
+						</e:Label>
+						<e:Group>
+							<e:UIAsset source="bg_3" width="107" height="30"/>
+							<e:UIAsset source="icon_attack" top="5" />
+							<e:Label id="lblHeroAttack" text="99999" size="18" bold="true" textColor="0x124512" top="5" left="25">
+							</e:Label>
+						</e:Group>
+						<e:Group>
+							<e:UIAsset source="bg_3" width="107" height="30"/>
+							<e:UIAsset source="icon_hp" top="5" />
+							<e:Label id="lblHeroHp" text="99999" size="18" bold="true" textColor="0x124512" top="5" left="25">
+							</e:Label>
+						</e:Group>
+						<e:Group>
+							<e:UIAsset source="bg_3" width="107" height="30"/>
+							<e:UIAsset source="icon_defend" top="5" />
+							<e:Label id="lblHeroDefend" text="99999" size="18" bold="true" textColor="0x124512" top="5" left="25">
+							</e:Label>
+						</e:Group>
+					</e:Group>
+				</e:Group>
+				<e:Group>
+					<e:layout >
+						<e:VerticalLayout horizontalAlign="left" gap="10" />
+					</e:layout>
+					<e:Label id="lblUnlockDesc" text="解锁条件" width="100%" height="30" size="19" bold="true" textColor="0x000000" visible="true"/>
+					<e:Group>
+						<e:UIAsset source="bg_2" width="280" height="170" scale9Grid="35,18,211,113"/>
+							<e:Group>
+								<e:layout>
+									<e:VerticalLayout horizontalAlign="center" padding="10" />
+								</e:layout>
+								<e:Group>
+									<e:layout>
+										<e:HorizontalLayout verticalAlign="middle" gap="10" />
+									</e:layout>						
+									<e:UIAsset source="anniu_5" />
+									<e:Label id="lblNormalDesc" text="普通技能＊＊＊＊＊＊＊＊12" size="18" textColor="0x123456" bold="true" width="180" height="70">	
+									</e:Label>
+								</e:Group>
+								<e:Group>
+									<e:layout>
+										<e:HorizontalLayout verticalAlign="middle" gap="10" />
+									</e:layout>						
+									<e:UIAsset source="anniu_5" />
+									<e:Label id="lblSpecialDesc" text="特殊技能＊＊＊＊＊＊＊＊12" size="18" textColor="0x123456" bold="true" width="180" height="70">	
+									</e:Label>
+								</e:Group>
+							</e:Group>
+						</e:Group>
+					</e:Group>	
+				</e:Group>
+		</e:Group>
+		
+		<!-- 确定 取消 按钮 -->
+		<e:Group>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle" padding="5" gap="15" />
+			</e:layout>
+			<e:Button id="btnCancel" label="取消" size="22" />
+			<e:Button id="btnConfirm" label="确定" size="22" />
+		</e:Group>
+	</e:Group>
+</e:Skin>
